@@ -1,0 +1,42 @@
+//= require_self
+//= require_tree .
+
+// Fonts
+@font-face {
+  font-family: 'ActionMan';
+  src: url(/fonts/Action_Man.ttf) format('truetype')
+}
+
+// Mixins
+@mixin box-shadow($offset-x, $offset-y, $blur, $color) {
+  box-shadow: $offset-x $offset-y $blur $color;
+  -moz-box-shadow: $offset-x $offset-y $blur $color;
+  -webkit-box-shadow: $offset-x $offset-y $blur $color;
+}
+
+* {
+  font-family: 'ActionMan'
+}
+
+img {
+  @include box-shadow(2px, 2px, 15px, #000);
+  height: 100%;
+}
+
+div.welcome {
+  font-size: 1.25rem;
+  margin: 40px 0;
+  text-align: center;
+  width: 100%;
+  div.moretocome {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+}
+
+div.image {
+  height: 75%;
+  margin: auto;
+  text-align: center;
+}
+
