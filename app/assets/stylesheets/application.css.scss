@@ -4,7 +4,17 @@
 // Fonts
 @font-face {
   font-family: 'ActionMan';
-  src: url(/fonts/Action_Man.ttf) format('truetype')
+  src: url(/fonts/Action_Man.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ActionManBold';
+  src: url(/fonts/Action_Man_Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ActionManShaded';
+  src: url(/fonts/Action_Man_Shaded.ttf) format('truetype');
 }
 
 // Mixins
@@ -21,7 +31,15 @@
 }
 
 * {
-  font-family: 'ActionMan'
+  background-color: #FCFCFC;
+  font-family: 'ActionMan';
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
 }
 
 img {
@@ -30,19 +48,33 @@ img {
   height: 100%;
 }
 
-div.welcome {
+div#copyright {
+  bottom: 10;
+  display: block;
+  font-size: 0.6rem;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+div#welcome {
   font-size: 1.25rem;
   margin: 40px 0;
   text-align: center;
   width: 100%;
-  div.moretocome {
-    font-size: 0.9rem;
+  span#title {
+    font-family: 'ActionManShaded';
+  }
+  div#moretocome {
+    font-family: 'ActionManBold';
+    font-size: 0.85rem;
     margin: 10px 0;
   }
 }
 
 div.image {
-  height: 75%;
+  height: 50%;
   margin: auto;
   text-align: center;
 }
