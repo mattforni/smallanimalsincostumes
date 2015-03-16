@@ -14,12 +14,19 @@
   -webkit-box-shadow: $offset-x $offset-y $blur $color;
 }
 
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
 * {
   font-family: 'ActionMan'
 }
 
 img {
-  @include box-shadow(2px, 2px, 15px, #000);
+  @include box-shadow(2px, 2px, 10px, #000);
+  @include rounded-corners(5px);
   height: 100%;
 }
 
