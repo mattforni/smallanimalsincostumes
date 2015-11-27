@@ -1,13 +1,17 @@
 #welcome
-  = '- Welcome to '
+  = '-'
   %span#title='smallanimalsincostumes'
   = '[dot] com -'
-  #moretocome
-    = '( more to come soon )'
-.image
-  = image_tag '1.jpg', class: 'medium'
 
-#copyright
-  &copy;
-  = link_to 'Matthew Fornaciari', 'http://www.mattforni.com', target: '_blank'
+#display
+  #left.arrow
+  #image
+    = image_tag '', id: 'animal'
+  #right.arrow
+
+#info
+  #index
+  %span.of='of'
+  #total
+    = @total
 

@@ -1,7 +1,11 @@
+<!DOCTYPE html>
 %html
-  %head
-    %title="smallanimalsincostumes"
-    = stylesheet_link_tag 'application', media: 'all'
+  = render partial: 'application/head'
   %body
-    = yield
+    = handle_toast
+
+    #content
+      = yield
+
+    = render partial: 'application/copyright'
 
